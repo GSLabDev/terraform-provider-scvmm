@@ -3,7 +3,7 @@
 This is the repository for the Terraform [Microsoft SCVMM][1] Provider, which one can use
 with Terraform to work with Microsoft SCVMM.
 
-[1]: https://www.opendaylight.org/
+[1]: https://docs.microsoft.com/en-us/system-center/vmm/
 
 Coverage is currently only limited to Virtual Machine, Virtual Disk and Checkpoint but in the coming months we are planning release coverage for most essential Microsoft SCVMM workflows.
 Watch this space!
