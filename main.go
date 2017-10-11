@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/hashicorp/terraform/plugin"
-	"github.com/idmsubs/terraform-provider-scvmm/scvmm"
+	"github.com/GSLabDev/terraform-provider-scvmm/scvmm"
 )
 
 func main() {
