@@ -1,0 +1,31 @@
+<% wrap_layout :inner do %>
+    <% content_for :sidebar do %>
+      <div class="docs-sidebar hidden-print affix-top" role="complementary">
+        <ul class="nav docs-sidenav">
+          <li<%= sidebar_current("docs-home") %>>
+            <a href="/docs/providers/index.html">All Providers</a>
+          </li>
+  
+          <li<%= sidebar_current("docs-scvmm-index") %>>
+            <a href="/docs/providers/scvmm/index.html">Open Daylight</a>
+          </li>
+  
+          <li<%= sidebar_current("docs-scvmm-resource-inventory") %>>
+            <a href="#">Virtual Machine</a>
+            <ul class="nav nav-visible">
+              <li<%= sidebar_current("docs-scvmm-virtual-machine") %>>
+                <a href="/docs/providers/scvmm/r/virtual_machine.html">scvmm_virtual_machine</a>
+              </li>
+              <li<%= sidebar_current("docs-scvmm-virtual-disk") %>>
+                <a href="/docs/providers/scvmm/r/virtual_disk.html">scvmm_virtual_disk</a>
+              </li>
+              <li<%= sidebar_current("docs-scvmm-checkpoint") %>>
+                <a href="/docs/providers/scvmm/r/checkpoint.html">scvmm_checkpoint</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    <% end %>
+    <%= yield %>
+  <% end %>
