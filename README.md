@@ -78,11 +78,11 @@ section above][8]).
 ## Cloning the Project
 
 First, you will want to clone the repository to
-`$GOPATH/src/github.com/terraform-providers/terraform-provider-scvmm`:
+`$GOPATH/src/github.com/GSLabDev/terraform-provider-scvmm`:
 
 ```sh
-mkdir -p $GOPATH/src/github.com/terraform-providers
-cd $GOPATH/src/github.com/terraform-providers
+mkdir -p $GOPATH/src/github.com/GSLabDev/
+cd $GOPATH/src/github.com/GSLabDev/
 git clone git@github.com:terraform-providers/terraform-provider-scvmm
 ```
 
@@ -92,8 +92,8 @@ After the clone has been completed, you can enter the provider directory and
 build the provider.
 
 ```sh
-cd $GOPATH/src/github.com/terraform-providers/terraform-provider-scvmm
-make build
+cd $GOPATH/src/github.com/GSLabDev/terraform-provider-scvmm
+make
 ```
 
 ## Installing the Local Plugin
