@@ -58,10 +58,10 @@ resource "scvmm_virtual_disk" "demoDisk" {
 }
 
 resource "scvmm_checkpoint" "demoCheck" {
-        timeout=1000
-        vmm_server="${scvmm_virtual_disk.demoDisk.vmm_server}"
-        vm_name="${scvmm_virtual_machine.CreateVM.vm_name}"
-        checkpoint_name="demo_checkpoint"
+  timeout=1000
+  vmm_server="${scvmm_virtual_disk.demoDisk.vmm_server}"
+  vm_name="${scvmm_virtual_machine.CreateVM.vm_name}"
+  checkpoint_name="demo_checkpoint"
 }
 ```
 
