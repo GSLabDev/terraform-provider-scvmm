@@ -5,11 +5,8 @@ COVER_TEST?=$$(go list ./... |grep -v 'vendor')
 default: build
 
 build: fmtcheck
-	dependencies-resolve
+	go get
 	go install
-
-dependencies-resolve:
-	go get 
 
 test: fmtcheck
 	go test -i $(TEST) || exit 1
